@@ -26,8 +26,8 @@ import imgBigote from "@/assets/bigote.png";
 import imgTriangulo from "@/assets/triangulo.png";
 import imgGalleta from "@/assets/galleta.png";
 import imgGalletaConGrajea from "@/assets/galleta con grajea.png";
-import imgBanderrilla from "@/assets/banderrilla.jpg";
-import imgBisque from "@/assets/bisque.jpg";
+import imgBanderrilla from "@/assets/banderilla.jpg";
+import imgBisque from "@/assets/bisquet.jpg";
 import imgCanilla from "@/assets/canilla.png";
 import imgConcha from "@/assets/concha.jpeg";
 import imgCuerno from "@/assets/cuerno.jpg";
@@ -66,8 +66,8 @@ const LOCAL_IMAGES: Record<string, string> = {
   "triangulo":          imgTriangulo,
   "galleta":            imgGalleta,
   "galleta con grajea": imgGalletaConGrajea,
-  "banderrilla":        imgBanderrilla,
-  "bisque":             imgBisque,
+  "banderilla":         imgBanderrilla,
+  "bisquet":            imgBisque,
   "canilla":            imgCanilla,
   "concha":             imgConcha,
   "cuerno":             imgCuerno,
