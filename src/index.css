@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm bakery palette inspired by El Globo */
+    --background: 30 25% 96%;
+    --foreground: 20 15% 20%;
+
+    --card: 30 30% 98%;
+    --card-foreground: 20 15% 20%;
+
+    --popover: 30 30% 98%;
+    --popover-foreground: 20 15% 20%;
+
+    /* Burgundy/Wine accent */
+    --primary: 345 40% 38%;
+    --primary-foreground: 30 30% 98%;
+
+    /* Warm beige */
+    --secondary: 30 25% 92%;
+    --secondary-foreground: 20 15% 25%;
+
+    --muted: 30 20% 90%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Golden accent */
+    --accent: 38 60% 55%;
+    --accent-foreground: 20 15% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 345 40% 38%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 30 25% 96%;
+    --sidebar-foreground: 20 15% 20%;
+    --sidebar-primary: 345 40% 38%;
+    --sidebar-primary-foreground: 30 30% 98%;
+    --sidebar-accent: 30 25% 92%;
+    --sidebar-accent-foreground: 20 15% 20%;
+    --sidebar-border: 30 20% 88%;
+    --sidebar-ring: 345 40% 38%;
+
+    /* Custom bakery tokens */
+    --bakery-cream: 35 35% 94%;
+    --bakery-warm: 25 30% 88%;
+    --bakery-gold: 38 60% 55%;
+    --bakery-wine: 345 40% 38%;
+    --bakery-wine-light: 345 35% 50%;
+    --bakery-dark: 20 15% 20%;
+  }
+
+  .dark {
+    --background: 20 15% 10%;
+    --foreground: 30 25% 96%;
+
+    --card: 20 15% 12%;
+    --card-foreground: 30 25% 96%;
+
+    --popover: 20 15% 12%;
+    --popover-foreground: 30 25% 96%;
+
+    --primary: 345 40% 50%;
+    --primary-foreground: 30 30% 98%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 30 25% 96%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 30 15% 65%;
+
+    --accent: 38 60% 50%;
+    --accent-foreground: 20 15% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 345 40% 50%;
+    
+    --sidebar-background: 20 15% 10%;
+    --sidebar-foreground: 30 25% 96%;
+    --sidebar-primary: 345 40% 50%;
+    --sidebar-primary-foreground: 30 30% 98%;
+    --sidebar-accent: 20 15% 18%;
+    --sidebar-accent-foreground: 30 25% 96%;
+    --sidebar-border: 20 15% 20%;
+    --sidebar-ring: 345 40% 50%;
+
+    --bakery-cream: 20 15% 15%;
+    --bakery-warm: 20 15% 20%;
+    --bakery-gold: 38 60% 50%;
+    --bakery-wine: 345 40% 50%;
+    --bakery-wine-light: 345 35% 60%;
+    --bakery-dark: 30 25% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .bg-bakery-cream {
+    background-color: hsl(var(--bakery-cream));
+  }
+
+  .bg-bakery-warm {
+    background-color: hsl(var(--bakery-warm));
+  }
+
+  .bg-bakery-wine {
+    background-color: hsl(var(--bakery-wine));
+  }
+
+  .text-bakery-wine {
+    color: hsl(var(--bakery-wine));
+  }
+
+  .text-bakery-gold {
+    color: hsl(var(--bakery-gold));
+  }
+
+  .border-bakery-wine {
+    border-color: hsl(var(--bakery-wine));
+  }
+
+  .hover-bakery-wine:hover {
+    background-color: hsl(var(--bakery-wine-light));
+  }
+}
