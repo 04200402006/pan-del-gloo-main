@@ -26,6 +26,21 @@ import imgBigote from "@/assets/bigote.png";
 import imgTriangulo from "@/assets/triangulo.png";
 import imgGalleta from "@/assets/galleta.png";
 import imgGalletaConGrajea from "@/assets/galleta con grajea.png";
+import imgBanderrilla from "@/assets/banderrilla.jpg";
+import imgBisque from "@/assets/bisque.jpg";
+import imgCanilla from "@/assets/canilla.png";
+import imgConcha from "@/assets/concha.jpeg";
+import imgCuerno from "@/assets/cuerno.jpg";
+import imgEmpanada from "@/assets/empanada.jpeg";
+import imgEngrane from "@/assets/engrane.png";
+import imgLlantaDeManteca from "@/assets/llanta de manteca.png";
+import imgMantecada from "@/assets/mantecada.jpg";
+import imgMono from "@/assets/moño.jpg";
+import imgOreja from "@/assets/oreja.png";
+import imgTornillo from "@/assets/tornillo.png";
+import imgTroncoDeManteca from "@/assets/tronco de manteca.png";
+import imgTronco from "@/assets/tronco.png";
+import imgVolovanes from "@/assets/volovanes.jpeg";
 
 const LOCAL_IMAGES: Record<string, string> = {
   "payaso":             imgPayaso,
@@ -51,6 +66,21 @@ const LOCAL_IMAGES: Record<string, string> = {
   "triangulo":          imgTriangulo,
   "galleta":            imgGalleta,
   "galleta con grajea": imgGalletaConGrajea,
+  "banderrilla":        imgBanderrilla,
+  "bisque":             imgBisque,
+  "canilla":            imgCanilla,
+  "concha":             imgConcha,
+  "cuerno":             imgCuerno,
+  "empanada":           imgEmpanada,
+  "engrane":            imgEngrane,
+  "llanta de manteca":  imgLlantaDeManteca,
+  "mantecada":          imgMantecada,
+  "mono":               imgMono,
+  "oreja":              imgOreja,
+  "tornillo":           imgTornillo,
+  "tronco de manteca":  imgTroncoDeManteca,
+  "tronco":             imgTronco,
+  "volovanes":          imgVolovanes,
 };
 
 function normalizeKey(s: string): string {
