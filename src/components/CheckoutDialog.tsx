@@ -14,7 +14,7 @@ import { MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 const WHATSAPP_NUMBER =
-  import.meta.env.VITE_WHATSAPP_NUMBER ?? "522871104102";
+  import.meta.env.VITE_WHATSAPP_NUMBER || "522871104102";
 
 interface CheckoutDialogProps {
   open: boolean;
